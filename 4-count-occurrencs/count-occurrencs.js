@@ -1,3 +1,5 @@
+// Finding the maximum number of certain character in a string
+
 function countOccurrences(str, char) {
   let count = 0;
 
@@ -8,5 +10,7 @@ function countOccurrences(str, char) {
   }
   return count;
 }
+
+// const countOccurrences = (str, char) => str.split(char).length - 1;
 
 module.exports = countOccurrences;
