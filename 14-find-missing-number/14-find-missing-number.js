@@ -5,11 +5,11 @@ function findMissingNumber(arr) {
 
   const n = arr.length + 1;
 
-  const expectedNumber = (n * (n + 1)) / 2;
+  const expectedSum = (n * (n + 1)) / 2;
 
-  const actualNumber = arr.reduce((sum, num) => sum + num, 0);
+  const currentSum = arr.reduce((sum, num) => sum + num, 0);
 
-  return expectedNumber - actualNumber;
+  return expectedSum - currentSum;
 }
 
 module.exports = findMissingNumber;
